@@ -26,7 +26,7 @@ public class GameStore {
     }
 
     /**
-     * Проверяет наличие игры в каталоге и возврашает true
+     * Проверяет наличие игры в каталоге и возвращает true
      * если игра есть и false иначе
      */
     public boolean containsGame(Game game) {
@@ -74,5 +74,5 @@ public class GameStore {
      */
     public int getSumPlayedTime() {
         return 0;
-    }
+    }  // Всегда возвращает 0. Сделать баг репорт!!
 }
