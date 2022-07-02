@@ -26,6 +26,17 @@ public class PlayerTest {
         assertEquals(expected, actual);
     }
 
+    @Test /*если игра была добавлена, то изменений нет*/
+    public void shouldSumGenreIfOneGame2AndInstallGame() {
+        player1.installGame(game1);
+        player1.installGame(game1);
+        player1.play(game1, 3);
+
+        int expected = 3;
+        int actual = player1.sumGenre(game1.getGenre());
+        assertEquals(expected, actual);
+    }
+
     @Test /*игра не установлена у игрока, но время посчиталось, а должно выходить RuntimeException*/
     public void shouldSumGenreIfOneGame2AndNotInstallGame() {
 //        player1.installGame(game1);
