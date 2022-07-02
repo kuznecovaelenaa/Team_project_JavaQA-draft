@@ -74,5 +74,5 @@ public class GameStore {
      */
     public int getSumPlayedTime() {
         return 0;
-    }  // Всегда возвращает 0. Сделать баг репорт!!
+    }
 }
